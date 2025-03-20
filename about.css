@@ -22,8 +22,13 @@ body{
     padding-right:20px;
 }
 .menuHR{
+    margin: 0px 0px 5px 0px;
+}
+
+.pathhr{
     border: .5px solid rgb(0, 92, 0);
-    margin-bottom: 1px;
+    left:0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .path{
@@ -97,7 +102,9 @@ a:hover{
 }
 
 hr{
-    border: .3px solid rgb(0, 92, 0);
+    border: .3px dashed rgb(0, 92, 0);
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 a{
@@ -152,14 +159,14 @@ a:active{
 
     /* path bar at the top */
     .path {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 5px 5px 5px;
-        font-size: 1rem;
-        background-color: #dfdbcb;
-      }  
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 5px 5px 5px;
+      font-size: 1rem;
+      background-color: #dfdbcb;
+    }
     
     .infocontainer{
         width: 100%;

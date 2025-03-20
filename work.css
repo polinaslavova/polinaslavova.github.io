@@ -15,6 +15,7 @@ body{
     font-size: 1rem;
     color:rgb(0, 92, 0);
     bottom: 0px;
+    z-index: 100;
 }
 .menuTxt{
     display:inline-block;
@@ -22,10 +23,14 @@ body{
     padding-right:20px;
 }
 .menuHR{
-    border: .5px solid rgb(0, 92, 0);
-    margin-bottom: 1px;
+    margin: 0px 0px 5px 0px;
 }
 
+.pathhr{
+    border: .5px solid rgb(0, 92, 0);
+    left:0px;
+    margin: 5px 0px 0px 0px;
+}
 
 .clarification{
     /* text-align: center; */
@@ -114,6 +119,7 @@ a:hover{
 
 hr{
     border: .3px solid rgb(0, 92, 0);
+    margin:3px;
 }
 
 a{
