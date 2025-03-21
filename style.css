@@ -137,7 +137,25 @@ a:active{
       font-size: 1rem;
       line-height: 1.2rem;
     }
-    
+    .bigcontainer{
+        padding-top: 45px;
+        width: 100%;
+        height:auto;
+        display:flex;
+        flex-direction: row;
+        flex-flow:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:flex-start;
+        gap: 0px 18px;
+        padding-bottom: 50px;
+    }
+    .container{
+        width: 480px;
+        height:auto;
+        padding-top: 10px;
+    }
+
     /* menuu */
     .menu {
       position: fixed;
