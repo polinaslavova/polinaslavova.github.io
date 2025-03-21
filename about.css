@@ -102,9 +102,13 @@ a:hover{
 }
 
 hr{
-    border: .3px dashed rgb(0, 92, 0);
+    border: .3px solid rgb(0, 92, 0);
     margin-top:10px;
     margin-bottom: 10px;
+}
+
+.abouthr{
+    border: .3px dashed rgb(0, 92, 0);
 }
 
 a{
