@@ -173,7 +173,6 @@ a:active{
     line-height: 500px;  
     font-size: 1.5rem;
     user-select: none;
-
 }
 .prev {
     left: 5px;
@@ -299,9 +298,17 @@ a:active{
       width: 100%;
     }
     .mySlides img {
-      width: 100%;
+      width: 428px;
       height: auto;
-      max-height: 300px;
+      height: 300px;
+    }
+    .arrowwrapper{
+        width: 428px;
+        height: 300px;
+    }
+    .prev, .next {
+        width:480px;
+        line-height: 300px;  
     }
     .cc{
         display: none;
