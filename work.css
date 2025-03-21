@@ -143,8 +143,8 @@ a:active{
 }
 
 .mySlides img {
-    max-height: 490px;
-    width: auto;
+    height: 490px;
+    width: 700px;
 }
 
 /* Hide all slides by default */
@@ -157,19 +157,30 @@ a:active{
     display: block;
 }
 
-.mySlides .arrowwrapper{
+.arrowwrapper{
     position: absolute;
-    padding: 8px 12px;
-    bottom: 8px;
+    width: 700px;
+    height: 490px;
 }
+
 .prev, .next {
+    font-family: IBM Plex;
+    position: absolute;
     cursor: pointer;
     color: #f2f2f2;
-    font-size: 1rem;
+    width:350px;
+    vertical-align:middle;
+    line-height: 500px;  
+    font-size: 1.5rem;
     user-select: none;
+
 }
 .prev {
-    padding-right: 1rem;
+    left: 5px;
+}
+.next {
+    right:5px;
+    text-align: right;
 }
 .prev:hover{
     color: #f2f2f2;
