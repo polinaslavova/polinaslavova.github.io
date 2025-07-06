@@ -100,7 +100,8 @@ function adjustDescriptiveHeights() {
   const descriptives = document.querySelectorAll(".descriptive");
   descriptives.forEach(function (desc) {
     if (desc.classList.contains("active")) {
-      desc.style.height = contentHeight + "px";
+      desc.style.maxHeight = contentHeight + "px";
+      desc.style.height = "auto";
       desc.style.overflow = "auto";
       desc.style.visibility = "visible";
       desc.style.paddingBottom = "5px";
