@@ -194,6 +194,7 @@ a:active {
   }
 }
 
+/* here is for the biggie */
 @media (min-width: 1200px) {
   body {
     font-size: 1.1rem;
