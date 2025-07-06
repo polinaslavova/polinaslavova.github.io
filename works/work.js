@@ -78,3 +78,55 @@ function showSlidesProcess(n) {
   }
   if (slides.length > 0) slides[slideIndexProcess - 1].style.display = "block";
 }
+
+// 動態分配 .descriptive 區塊高度，讓所有 section title 都在，只有 active 的內容區有高度
+function adjustDescriptiveHeights() {
+  // 82vh 可用高度
+  const vh = window.innerHeight * 0.82;
+  const tags = document.querySelectorAll(".detailcontainer .tags");
+  let titlesHeight = 0;
+  tags.forEach((tag) => {
+    // 只加 title 部分高度（不加內容區）
+    const firstDiv = tag.querySelector("div");
+    if (firstDiv) {
+      // getBoundingClientRect 會包含 padding/border
+      titlesHeight += firstDiv.getBoundingClientRect().height;
+    }
+    // 加上 <hr> 的高度（約 6px，根據 CSS margin）
+    titlesHeight += 6;
+  });
+  // 可用內容高度 = 85vh - 所有 title 區高度
+  const contentHeight = Math.max(vh - titlesHeight, 80); // 最小 80px，避免負值
+  const descriptives = document.querySelectorAll(".descriptive");
+  descriptives.forEach(function (desc) {
+    if (desc.classList.contains("active")) {
+      desc.style.height = contentHeight + "px";
+      desc.style.overflow = "auto";
+      desc.style.visibility = "visible";
+      desc.style.paddingBottom = "5px";
+    } else {
+      desc.style.height = "0px";
+      desc.style.overflow = "hidden";
+      desc.style.visibility = "hidden";
+      desc.style.paddingBottom = "0px";
+    }
+  });
+}
+
+// 監聽 active 切換
+function observeActiveDescriptive() {
+  const container = document.querySelector(".detailcontainer");
+  if (!container) return;
+  const observer = new MutationObserver(adjustDescriptiveHeights);
+  observer.observe(container, {
+    attributes: true,
+    subtree: true,
+    attributeFilter: ["class"],
+  });
+}
+
+window.addEventListener("resize", adjustDescriptiveHeights);
+document.addEventListener("DOMContentLoaded", function () {
+  adjustDescriptiveHeights();
+  observeActiveDescriptive();
+});
