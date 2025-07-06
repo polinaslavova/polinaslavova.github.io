@@ -26,6 +26,25 @@ function toggleContainer(containerId, containerName) {
 let slideIndex = 1;
 let slideIndexProcess = 1;
 
+// =====================
+// SLIDESHOW LOGIC NOTES
+// =====================
+// First slider uses:
+//   - class="mySlides"
+//   - slideIndex, plusSlides(), showSlides(), currentSlide()
+// Second slider (Process) uses:
+//   - class="mySlides-process"
+//   - slideIndexProcess, plusSlidesProcess(), showSlidesProcess(), currentSlideProcess()
+//   - HTML: arrow onclick uses plusSlidesProcess()
+// To add a third slider:
+//   - Use a new class (e.g. mySlides-third)
+//   - Add new variable: slideIndexThird
+//   - Add new functions: plusSlidesThird(), showSlidesThird(), currentSlideThird()
+//   - Update HTML arrow onclick to use plusSlidesThird()
+//   - (Optional) Add new CSS for .mySlides-third img if needed
+//
+// When copying, search for all 'Process' and replace with your new slider name.
+
 window.onload = function () {
   showSlides(slideIndex); // Ensure first slide shows when page loads
   showSlidesProcess(slideIndexProcess); // Show first process slide

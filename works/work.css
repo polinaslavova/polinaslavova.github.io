@@ -130,6 +130,16 @@ a:active {
   color: rgb(0, 92, 0);
 }
 
+/*
+SLIDESHOW CSS NOTES
+-------------------
+- .mySlides img applies to the first slider
+- .mySlides-process img applies to the second (Process) slider
+- To add a third slider, add a new rule for .mySlides-third img if you want custom styles
+- .slideshow-container is shared for all sliders (height is set by JS)
+- If you want a different container style for a new slider, add a new class and style it here
+*/
+
 .slideshow-container {
   position: relative;
   margin: auto;
