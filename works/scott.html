@@ -1,225 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--remember to change the title here as well!!!-->
     <title>Polina Slavova - (Not) Jammed</title>
-    
-       <!--icon-->
-       <link rel='icon' href='/images/icons/tab.png' type='image/x-icon'/ >
-    <link rel="stylesheet" type="text/css" href="work.css">
+
+    <!--icon-->
+    <link rel='icon' href='/images/icons/tab.png' type='image/x-icon'/ >
+    <link rel="stylesheet" type="text/css" href="work.css" />
     <script src="work.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="menu">
-        <hr class="menuHR">
-        <p class="menuTxt"><a href="/index.html" style="text-decoration: none;">Index</a></p>
-        <p class="menuTxt"><a href="/about.html" style="text-decoration: none;">About</a></p>
-        <p class="menuTxt"><a href="mailto:polinaslavova.work@gmail.com" style="text-decoration: none;">Contact</a></p>
-        <p class="menuTxt"><a href="https://www.instagram.com/_polinaslavova/" target="_blank" style="text-decoration: none;">Instagram</a></p>
+      <hr class="menuHR" />
+      <p class="menuTxt">
+        <a href="/index.html" style="text-decoration: none">Index</a>
+      </p>
+      <p class="menuTxt">
+        <a href="/about.html" style="text-decoration: none">About</a>
+      </p>
+      <p class="menuTxt">
+        <a
+          href="mailto:polinaslavova.work@gmail.com"
+          style="text-decoration: none"
+          >Contact</a
+        >
+      </p>
+      <p class="menuTxt">
+        <a
+          href="https://www.instagram.com/_polinaslavova/"
+          target="_blank"
+          style="text-decoration: none"
+          >Instagram</a
+        >
+      </p>
     </div>
     <!-- remember to change the title name also here! -->
-    <div class="path" id="path" data-static-path="/Index/(Not) Jammed">/Index/(Not) Jammed/Description<br><hr class="pathhr">
+    <div class="path" id="path" data-static-path="/Index/(Not) Jammed">
+      /Index/(Not) Jammed/Description<br />
+      <hr class="pathhr" />
     </div>
 
     <!-- this is where the left side info start -->
     <div class="infocontainer">
-        <div class="container">
-            <div class="title">[4]&nbsp&nbsp(Not) Jammed</div>
-            <div class="tinyImages"><img src="/images/icons/scott.png"></div>
-            <div class="baseinfo">
-            <div class="tags">2023</div><hr>
-            <div class="tags">installation, publication</div><hr>
-            <div class="tags">1 printer, 1 raspberry pi </div><hr>
-            <div class="tags">In collaboration with Nai-Syuan Ye as part of DuctTape Collective</div><hr>
-            <div class="tags">Publication designed by Doğa Gönüllü</div><hr>
-            <div class="tags">// human-machine // machine // obsolete // technology // installation // print // narrative // noise // motors // servo motors // stepper motors // wires</div><hr>
-           </div>
+      <div class="container">
+        <div class="title">[4]&nbsp&nbsp(Not) Jammed</div>
+        <div class="tinyImages"><img src="/images/icons/scott.png" /></div>
+        <div class="baseinfo">
+          <div class="tags">2023</div>
+          <hr />
+          <div class="tags">installation, publication</div>
+          <hr />
+          <div class="tags">1 printer, 1 raspberry pi</div>
+          <hr />
+          <div class="tags">
+            In collaboration with Nai-Syuan Ye as part of DuctTape Collective
+          </div>
+          <hr />
+          <div class="tags">Publication designed by Doğa Gönüllü</div>
+          <hr />
+          <div class="tags">
+            // human-machine // machine // obsolete // technology //
+            installation // print // narrative // noise // motors // servo
+            motors // stepper motors // wires
+          </div>
+          <hr />
         </div>
-        <div class="hehehe">
+      </div>
+      <div class="hehehe">
         <p id="wordCount">//Words: 0</p>
         <p id="linkCount">//Links: 0</p>
-        </div>
+      </div>
     </div>
 
     <!-- this is where the right side content start -->
     <div class="detailcontainer">
-        <hr class="mobileinbetweenbar">
-            <div class="tags" id="description"><div onclick="toggleContainer('descriptionTxt', 'Description')">Description</div><div class="descriptive active" id="descriptionTxt">What if machines could think or experience emotions? Observing anachronistic machines has prompted us to wonder whether we truly comprehend these human creations. They often act out, get stubborn and defensive, take their time, or start wailing when you ask them to work. As a collective, our intention is to foster an appreciation for these machines and involve them in our design process and production by giving them the space to express their personality. <br><br>‘(Not) Jammed’ is an interactive installation through which we try to break free from the notion of carefulness around technology and give an opportunity to ourselves and the viewers to explore what can be done with a printer outside the constraints of its intended use. The work invites the visitor to engage with a dot matrix printer named Scott and in this way to actively participate in the production process behind printmaking. The installation facilitates a dialogue between people and a mischievous machine, in which the viewer is granted the role of a content provider, while the printer intervenes in the process of printing and acts as the layout designer.<br><br>Visitors can enter a “Scott’s Listening” zone, where they can talk directly to him, share a secret, read a poem or sing a song, where Scott will detect the speech and print out his own interpretation of it. Similar to how people sometimes misinterpret others’ words or drift off during a conversation, Scott is not entirely precise in translating human input, mishearing sentences and twisting their original meaning. Further along he selects the font, size, leading and composition of the printed speech based on the pitch of his own distinctive printing sounds. <br><br>The work is produced using Google API speech to text recognition and sending the text file for print at a certain time period. For changing the layout we use a servo motor that manually presses the font and size menu of the dot matrix printer, while the paper is manually rolled by a stepper motor. Both motors use the same principle of operation, rotating based on the sound pitch of the printing process.</div></div><hr>
-            
-            <div class="tags" id="images"><div onclick="toggleContainer('ImgTxt', 'Images')">Images</div>
-                <div class="descriptive" id="ImgTxt">
-                    <div class="slideshow-container">
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">1 / 6</div>
-                            <img src="/images/final/notjammed0.jpg">
-                        </div>
+      <hr class="mobileinbetweenbar" />
+      <div class="tags" id="description">
+        <div onclick="toggleContainer('descriptionTxt', 'Description')">
+          Description
+        </div>
+        <div class="descriptive active" id="descriptionTxt">
+          What if machines could think or experience emotions? Observing
+          anachronistic machines has prompted us to wonder whether we truly
+          comprehend these human creations. They often act out, get stubborn and
+          defensive, take their time, or start wailing when you ask them to
+          work. As a collective, our intention is to foster an appreciation for
+          these machines and involve them in our design process and production
+          by giving them the space to express their personality.
+          <br /><br />‘(Not) Jammed’ is an interactive installation through
+          which we try to break free from the notion of carefulness around
+          technology and give an opportunity to ourselves and the viewers to
+          explore what can be done with a printer outside the constraints of its
+          intended use. The work invites the visitor to engage with a dot matrix
+          printer named Scott and in this way to actively participate in the
+          production process behind printmaking. The installation facilitates a
+          dialogue between people and a mischievous machine, in which the viewer
+          is granted the role of a content provider, while the printer
+          intervenes in the process of printing and acts as the layout
+          designer.<br /><br />Visitors can enter a “Scott’s Listening” zone,
+          where they can talk directly to him, share a secret, read a poem or
+          sing a song, where Scott will detect the speech and print out his own
+          interpretation of it. Similar to how people sometimes misinterpret
+          others’ words or drift off during a conversation, Scott is not
+          entirely precise in translating human input, mishearing sentences and
+          twisting their original meaning. Further along he selects the font,
+          size, leading and composition of the printed speech based on the pitch
+          of his own distinctive printing sounds. <br /><br />The work is
+          produced using Google API speech to text recognition and sending the
+          text file for print at a certain time period. For changing the layout
+          we use a servo motor that manually presses the font and size menu of
+          the dot matrix printer, while the paper is manually rolled by a
+          stepper motor. Both motors use the same principle of operation,
+          rotating based on the sound pitch of the printing process.
+        </div>
+      </div>
+      <hr />
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">2 / 6</div>
-                            <img src="/images/final/notjammed1.jpg">
-                        </div>
-            
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">3 / 6</div>
-                            <img src="/images/final/notjammed2.jpg">
-                        </div>
-            
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">4 / 6</div>
-                            <img src="/images/final/notjammed3.jpg">
-                        </div>
+      <div class="tags" id="images">
+        <div onclick="toggleContainer('ImgTxt', 'Images')">Images</div>
+        <div class="descriptive" id="ImgTxt">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">1 / 6</div>
+              <img src="/images/final/notjammed0.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">5 / 6</div>
-                            <img src="/images/final/notjammed4.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">2 / 6</div>
+              <img src="/images/final/notjammed1.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">6 / 6</div>
-                            <img src="/images/final/notjammed5.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div><hr>
-            
-            <div class="tags" id="images"><div onclick="toggleContainer('PubTxt', 'Publication')">Publication</div>
-                <div class="descriptive" id="PubTxt">
-                    <div class="slideshow-container">
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">1 / 9</div>
-                            <img src="/images/final/nj_book.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">3 / 6</div>
+              <img src="/images/final/notjammed2.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">2 / 9</div>
-                            <img src="/images/final/nj_book2.jpg">
-                        </div>
-            
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">3 / 9</div>
-                            <img src="/images/final/nj_book3.jpg">
-                        </div>
-            
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">4 / 9</div>
-                            <img src="/images/final/nj_book4.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">4 / 6</div>
+              <img src="/images/final/notjammed3.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">5 / 9</div>
-                            <img src="/images/final/nj_book5.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">5 / 6</div>
+              <img src="/images/final/notjammed4.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">6 / 9</div>
-                            <img src="/images/final/nj_book6.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">6 / 6</div>
+              <img src="/images/final/notjammed5.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">7 / 9</div>
-                            <img src="/images/final/nj_book7.jpg">
-                        </div>
+      <div class="tags" id="images">
+        <div onclick="toggleContainer('PubTxt', 'Publication')">
+          Publication
+        </div>
+        <div class="descriptive" id="PubTxt">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">1 / 9</div>
+              <img src="/images/final/nj_book.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">8 / 9</div>
-                            <img src="/images/final/nj_book8.jpg">
-                        </div>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">2 / 9</div>
+              <img src="/images/final/nj_book2.jpg" />
+            </div>
 
-                        <div class="mySlides">
-                            <div class="arrowwrapper">
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <div class="numbertext">9 / 9</div>
-                            <img src="/images/final/nj_book9.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div><hr>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">3 / 9</div>
+              <img src="/images/final/nj_book3.jpg" />
+            </div>
 
-        <div class="tags" id="featured"><div onclick="toggleContainer('featuredTxt', 'Featured')">Featured</div><div class="descriptive" id="featuredTxt">Not Just A Fair, Platform POST, Arnhem (NL) <br> Manifestations, DDW 2023, Eindhoven (NL) <br> Extratonal Special #2: Puzzling Printers Camp, Varia, Rotterdam (NL) <br> Parameter: Generative Arts Fair, Adela festival, Ljubljana (SI) </div></div><hr>
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">4 / 9</div>
+              <img src="/images/final/nj_book4.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">5 / 9</div>
+              <img src="/images/final/nj_book5.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">6 / 9</div>
+              <img src="/images/final/nj_book6.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">7 / 9</div>
+              <img src="/images/final/nj_book7.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">8 / 9</div>
+              <img src="/images/final/nj_book8.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="arrowwrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="numbertext">9 / 9</div>
+              <img src="/images/final/nj_book9.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="tags" id="featured">
+        <div onclick="toggleContainer('featuredTxt', 'Featured')">Featured</div>
+        <div class="descriptive" id="featuredTxt">
+          Not Just A Fair, Platform POST, Arnhem (NL) <br />
+          Manifestations, DDW 2023, Eindhoven (NL) <br />
+          Extratonal Special #2: Puzzling Printers Camp, Varia, Rotterdam (NL)
+          <br />
+          Parameter: Generative Arts Fair, Adela festival, Ljubljana (SI)
+        </div>
+      </div>
+      <hr />
     </div>
-
 
     <p class="cc">© Studio Polina Slavova 2025</p>
 
     <script>
-    function countWords() {
-            let text = document.body.innerText || document.body.textContent;
-            let words = text.trim().split(/\s+/);
-            return words.filter(word => word.length > 0).length;
-        }
+      function countWords() {
+        let text = document.body.innerText || document.body.textContent;
+        let words = text.trim().split(/\s+/);
+        return words.filter((word) => word.length > 0).length;
+      }
 
-        const wordcount = countWords();
+      const wordcount = countWords();
 
-        document.getElementById("wordCount").textContent = "//Words: " + wordcount;
-    
-    function countLinks() {
-        const links = document.querySelectorAll('a');
+      document.getElementById("wordCount").textContent =
+        "//Words: " + wordcount;
+
+      function countLinks() {
+        const links = document.querySelectorAll("a");
         return links.length;
-    }
+      }
 
-    const linkcount = countLinks();
+      const linkcount = countLinks();
 
-    document.getElementById("linkCount").textContent = "//Links: " + linkount;
+      document.getElementById("linkCount").textContent =
+        "//Links: " + linkcount;
     </script>
-</body>
+  </body>
 </html>
