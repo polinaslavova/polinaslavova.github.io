@@ -196,33 +196,4 @@ a:active {
 
 /* here is for the biggie */
 @media (min-width: 1200px) {
-  body {
-    font-size: 1.1rem;
-    padding: 20px;
-    line-height: 1.3rem;
-  }
-  .bigcontainer {
-    width: 80vw;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-top: 60px;
-    gap: 0px 40px;
-  }
-  .container {
-    width: 480px;
-    padding-top: 20px;
-  }
-  .tinyImages img {
-    height: 150px;
-  }
-  .menu {
-    width: 80vw;
-    left: 10vw;
-    font-size: 1.1rem;
-  }
-  .path {
-    width: 80vw;
-    left: 10vw;
-    font-size: 1.1rem;
-  }
 }
