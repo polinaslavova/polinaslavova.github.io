@@ -105,11 +105,54 @@ function adjustDescriptiveHeights() {
       desc.style.overflow = "auto";
       desc.style.visibility = "visible";
       desc.style.paddingBottom = "5px";
+      // 同步調整 slideshow-container 高度
+      const slideshow = desc.querySelector(".slideshow-container");
+      if (slideshow) {
+        slideshow.style.height = contentHeight - 10 + "px";
+        slideshow.style.maxHeight = contentHeight - 10 + "px";
+        // 修正所有 slide 內容高度
+        const slides = slideshow.querySelectorAll(
+          ".mySlides, .mySlides-process"
+        );
+        slides.forEach(function (slide) {
+          slide.style.height = "100%";
+          slide.style.maxHeight = "100%";
+        });
+        // 修正圖片高度
+        const imgs = slideshow.querySelectorAll("img");
+        imgs.forEach(function (img) {
+          img.style.maxHeight = "100%";
+          img.style.height = "auto";
+          img.style.width = "auto";
+          img.style.objectFit = "contain";
+        });
+      }
     } else {
       desc.style.height = "0px";
+      desc.style.maxHeight = null;
       desc.style.overflow = "hidden";
       desc.style.visibility = "hidden";
       desc.style.paddingBottom = "0px";
+      // 關閉時 slideshow 高度也歸零
+      const slideshow = desc.querySelector(".slideshow-container");
+      if (slideshow) {
+        slideshow.style.height = "0px";
+        slideshow.style.maxHeight = null;
+        const slides = slideshow.querySelectorAll(
+          ".mySlides, .mySlides-process"
+        );
+        slides.forEach(function (slide) {
+          slide.style.height = null;
+          slide.style.maxHeight = null;
+        });
+        const imgs = slideshow.querySelectorAll("img");
+        imgs.forEach(function (img) {
+          img.style.maxHeight = null;
+          img.style.height = null;
+          img.style.width = null;
+          img.style.objectFit = null;
+        });
+      }
     }
   });
 }
