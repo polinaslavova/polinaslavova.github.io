@@ -25,6 +25,7 @@ function toggleContainer(containerId, containerName) {
 
 let slideIndex = 1;
 let slideIndexProcess = 1;
+let slideIndexThird = 1;
 
 // =====================
 // SLIDESHOW LOGIC NOTES
@@ -48,6 +49,7 @@ let slideIndexProcess = 1;
 window.onload = function () {
   showSlides(slideIndex); // Ensure first slide shows when page loads
   showSlidesProcess(slideIndexProcess); // Show first process slide
+  showSlidesThird(slideIndexThird);  
 };
 
 // Next/previous controls
@@ -59,6 +61,10 @@ function plusSlidesProcess(n) {
   showSlidesProcess((slideIndexProcess += n));
 }
 
+function plusSlidesThird(n) {
+  showSlidesThird((slideIndexThird += n));
+}
+
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
@@ -66,6 +72,10 @@ function currentSlide(n) {
 
 function currentSlideProcess(n) {
   showSlidesProcess((slideIndexProcess = n));
+}
+
+function currentSlideThird(n) {
+  showSlidesThird((slideIndexThird = n));
 }
 
 function showSlides(n) {
@@ -96,6 +106,21 @@ function showSlidesProcess(n) {
     slides[i].style.display = "none";
   }
   if (slides.length > 0) slides[slideIndexProcess - 1].style.display = "block";
+}
+
+function showSlidesThird(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-third");
+  if (n > slides.length) {
+    slideIndexThird = 1;
+  }
+  if (n < 1) {
+    slideIndexThird = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  if (slides.length > 0) slides[slideIndexThird - 1].style.display = "block";
 }
 
 // 動態分配 .descriptive 區塊高度，讓所有 section title 都在，只有 active 的內容區有高度
@@ -131,7 +156,7 @@ function adjustDescriptiveHeights() {
         slideshow.style.maxHeight = contentHeight - 10 + "px";
         // 修正所有 slide 內容高度
         const slides = slideshow.querySelectorAll(
-          ".mySlides, .mySlides-process"
+          ".mySlides, .mySlides-process, .mySlides-third"
         );
         slides.forEach(function (slide) {
           slide.style.height = "100%";
@@ -158,7 +183,7 @@ function adjustDescriptiveHeights() {
         slideshow.style.height = "0px";
         slideshow.style.maxHeight = null;
         const slides = slideshow.querySelectorAll(
-          ".mySlides, .mySlides-process"
+          ".mySlides, .mySlides-process, .mySlides-third"
         );
         slides.forEach(function (slide) {
           slide.style.height = null;
